@@ -14,7 +14,7 @@
     height: 100vh;
   }
   .container {
-    width: 450px;
+    width: 400px;
     height: 350px;
     box-shadow: 0px 2px 4px black;
     background: white;
@@ -23,8 +23,8 @@
   }
   .wrapper {
     position: relative;
-    width: 450px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.459);
     color: rgb(160, 236, 241);
@@ -62,11 +62,11 @@
   }
   .content {
     display: flex;
-    width: 1350px;
+    width: 1200px;
     height: 100%;
   }
   .item {
-    width: 450px;
+    width: 400px;
     color: black;
     background: white;
     display: flex;
@@ -127,3 +127,19 @@
   .fa-instagram:hover{
     color:#f44242;
   }
+
+@media screen and (min-width: 450px) {
+  
+  .content {
+    width: 1350px; }
+  
+  .item {
+    width: 450px; }
+  
+  .wrapper {
+    position: relative;
+    width: 450px; }
+  
+   .container {
+     width: 450px; }
+}
