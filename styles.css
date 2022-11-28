@@ -1,8 +1,13 @@
-footer{display: grid; width: 100%;grid-row-start: 3;}
-footer .payments{display:flex;width: 100%;justify-content: space-evenly;grid-row-start: 2;}
-footer .payments img{height:25px;-webkit-filter:grayscale(100%);filter:grayscale(100%);opacity:.5;-o-transition:.5s ease;transition:.5s ease;-webkit-transition:.5s ease;-moz-transition:.5s ease;}
-footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opacity:1;-o-transition:.5s ease;transition:.5s ease;-webkit-transition:.5s ease;-moz-transition:.5s ease;cursor:pointer;}
 /* css code */
+  footer{display: grid; width: 100%;grid-row-start: 3;}
+  footer .payments{display:flex;width: 100%;justify-content: space-evenly;grid-row-start: 2;}
+  footer .payments img{height:25px;-webkit-filter:grayscale(100%);filter:grayscale(100%);opacity:.5;-o-transition:.5s ease;transition:.5s ease;-webkit-transition:.5s ease;-moz-transition:.5s ease;}
+  footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opacity:1;-o-transition:.5s ease;transition:.5s ease;-webkit-transition:.5s ease;-moz-transition:.5s ease;cursor:pointer;}
+  a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+  a:hover{color:#0056b3;text-decoration:underline;}
+
+
+
 * { 
     margin: 0;
     padding: 0;
@@ -11,7 +16,7 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
     scroll-behavior: smooth;
   }
   body {
-    background: rgb(238, 174, 194);
+    font-family: montserrat, sans-serif;
     display: grid;
     place-items: center;
     transition: all 1s;
@@ -20,18 +25,19 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
   .container {
     width: 450px;
     height: 450px;
-    box-shadow: 0px 2px 4px black;
     background: white;
     overflow: hidden;
     z-index: 3;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   }
   .wrapper {
     position: relative;
     width: 450px;
     height: 450px;
     overflow: hidden;
-    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.459);
     color: rgb(160, 236, 241);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    
   }
   nav {
     position: absolute;
@@ -125,8 +131,8 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
   width: 75%;   
   text-align:center;
   grid-row-start: 2;
-  font-size: 1.2em;
-  
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .item{
@@ -142,11 +148,6 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
 
   @media screen and (max-width:450px){
     
-    .text-content{
-      width:80%;
-      font-size: 1em;
-    }
-      
     .wrapper {
     
       width: 290px;
@@ -166,6 +167,11 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
     .container {
       width: 290px;
     
+    }
+
+    .text-content{
+      font-size: 1em;
+      width: 80%;
     }
 
   }
