@@ -143,6 +143,7 @@ footer .payments img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opaci
   @media screen and (max-width:450px){
     
     .text-content{
+      width:80%;
       font-size: 1em;
     }
       
